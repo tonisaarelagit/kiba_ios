@@ -39,10 +39,6 @@
     [self checkAndSubmitLoginRequest];
 }
 
-- (IBAction)didTapSignupButton:(id)sender {
-    
-}
-
 #pragma mark - Check & Submit Login Request
 
 - (void)checkAndSubmitLoginRequest {

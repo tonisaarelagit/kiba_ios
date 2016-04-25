@@ -10,4 +10,10 @@
 
 @implementation SignupViewController
 
+#pragma mark - Button Action Methods
+
+- (IBAction)didTapBackButton:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end
