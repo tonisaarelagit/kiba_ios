@@ -10,6 +10,8 @@
 		09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5631D1CCE688A009F951C /* LoginViewController.m */; };
 		09A563231CCE68F3009F951C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563221CCE68F3009F951C /* SignupViewController.m */; };
 		09A563261CCE6903009F951C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563251CCE6903009F951C /* DashboardViewController.m */; };
+		09A5632A1CCE8228009F951C /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563291CCE8228009F951C /* APIClient.m */; };
+		09A5632D1CCE8869009F951C /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5632C1CCE8869009F951C /* APIService.m */; };
 		09AE85A11CCE3E3700FDAF7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85A01CCE3E3700FDAF7E /* main.m */; };
 		09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */; };
 		09AE85AA1CCE3E3700FDAF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AE85A81CCE3E3700FDAF7E /* Main.storyboard */; };
@@ -43,6 +45,10 @@
 		09A563221CCE68F3009F951C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		09A563241CCE6903009F951C /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		09A563251CCE6903009F951C /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		09A563281CCE8228009F951C /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		09A563291CCE8228009F951C /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		09A5632B1CCE8869009F951C /* APIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		09A5632C1CCE8869009F951C /* APIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
 		09AE859C1CCE3E3700FDAF7E /* Kiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AE85A01CCE3E3700FDAF7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09AE85A21CCE3E3700FDAF7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,16 +93,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09A5631F1CCE689B009F951C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				09AE85A21CCE3E3700FDAF7E /* AppDelegate.h */,
-				09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		09A563201CCE68A8009F951C /* Views */ = {
+		09A5631F1CCE689B009F951C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				09A5631C1CCE688A009F951C /* LoginViewController.h */,
@@ -106,7 +103,18 @@
 				09A563241CCE6903009F951C /* DashboardViewController.h */,
 				09A563251CCE6903009F951C /* DashboardViewController.m */,
 			);
-			name = Views;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		09A563271CCE81F3009F951C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09A563281CCE8228009F951C /* APIClient.h */,
+				09A563291CCE8228009F951C /* APIClient.m */,
+				09A5632B1CCE8869009F951C /* APIService.h */,
+				09A5632C1CCE8869009F951C /* APIService.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		09AE85931CCE3E3700FDAF7E = {
@@ -134,8 +142,10 @@
 		09AE859E1CCE3E3700FDAF7E /* Kiba */ = {
 			isa = PBXGroup;
 			children = (
-				09A5631F1CCE689B009F951C /* Controller */,
-				09A563201CCE68A8009F951C /* Views */,
+				09AE85A21CCE3E3700FDAF7E /* AppDelegate.h */,
+				09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */,
+				09A5631F1CCE689B009F951C /* Controllers */,
+				09A563271CCE81F3009F951C /* Utils */,
 				09AE85A81CCE3E3700FDAF7E /* Main.storyboard */,
 				09AE85AB1CCE3E3700FDAF7E /* Assets.xcassets */,
 				09AE85B01CCE3E3700FDAF7E /* Info.plist */,
@@ -368,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A563261CCE6903009F951C /* DashboardViewController.m in Sources */,
+				09A5632D1CCE8869009F951C /* APIService.m in Sources */,
+				09A5632A1CCE8228009F951C /* APIClient.m in Sources */,
 				09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */,
 				09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */,
 				09A563231CCE68F3009F951C /* SignupViewController.m in Sources */,
