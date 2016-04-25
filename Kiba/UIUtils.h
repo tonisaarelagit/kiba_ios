@@ -13,4 +13,8 @@
 
 + (void)animateBorder:(UIView *)view;
 
++ (void)showIndetermineProgressIn:(UIView *)view withMessage:(NSString *)message;
+
++ (void)dismissProgressIn:(UIView *)view;
+
 @end

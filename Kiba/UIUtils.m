@@ -7,6 +7,7 @@
 //
 
 #import "UIUtils.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @implementation UIUtils
 
@@ -20,6 +21,16 @@
     view.layer.borderWidth = 2;
     view.layer.borderColor = [UIColor clearColor].CGColor;
     [view.layer addAnimation:animation forKey:@"borderAnimation"];
+}
+
++ (void)showIndetermineProgressIn:(UIView *)view withMessage:(NSString *)message {
+    MBProgressHUD *progress = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    progress.dimBackground = YES;
+    progress.labelText = message;
+}
+
++ (void)dismissProgressIn:(UIView *)view {
+    [MBProgressHUD hideHUDForView:view animated:YES];
 }
 
 @end

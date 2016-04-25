@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "UIUtils.h"
 #import "ValidationUtils.h"
+#import "APIService.h"
+#import "UIViewController+AlertView.h"
 
 @interface LoginViewController() <UITextFieldDelegate>
 
@@ -54,6 +56,24 @@
         [UIUtils animateBorder:tfPassword];
     } else {
         // Submit login request here.
+        [tfEmail resignFirstResponder];
+        [tfPassword resignFirstResponder];
+        
+        [UIUtils showIndetermineProgressIn:self.view withMessage:@"Login..."];
+        [APIService loginWith:email password:password success:^(NSDictionary *retDict) {
+            [UIUtils dismissProgressIn:self.view];
+            
+            NSInteger status = [retDict[@"status"] intValue];
+            if (status == 0) {
+                NSString *errorMessage = retDict[@"message"];
+                [self showSimpleAlertWithTitle:@"Error" message:errorMessage];
+            } else {
+                [self showSimpleAlertWithTitle:@"Success" message:@"Login Success"];
+            }
+        } failed:^(NSString *errorMessage) {
+            [UIUtils dismissProgressIn:self.view];
+            [self showSimpleAlertWithTitle:@"Error" message:errorMessage];
+        }];
     }
 }
 

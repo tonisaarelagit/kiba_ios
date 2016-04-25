@@ -14,6 +14,7 @@
 		09A5632D1CCE8869009F951C /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5632C1CCE8869009F951C /* APIService.m */; };
 		09A563301CCE9BB5009F951C /* ValidationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5632F1CCE9BB5009F951C /* ValidationUtils.m */; };
 		09A563331CCE9CA1009F951C /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563321CCE9CA1009F951C /* UIUtils.m */; };
+		09A563361CCEA1C6009F951C /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563351CCEA1C6009F951C /* UIViewController+AlertView.m */; };
 		09AE85A11CCE3E3700FDAF7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85A01CCE3E3700FDAF7E /* main.m */; };
 		09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */; };
 		09AE85AA1CCE3E3700FDAF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AE85A81CCE3E3700FDAF7E /* Main.storyboard */; };
@@ -55,6 +56,8 @@
 		09A5632F1CCE9BB5009F951C /* ValidationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationUtils.m; sourceTree = "<group>"; };
 		09A563311CCE9CA1009F951C /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
 		09A563321CCE9CA1009F951C /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
+		09A563341CCEA1C6009F951C /* UIViewController+AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertView.h"; sourceTree = "<group>"; };
+		09A563351CCEA1C6009F951C /* UIViewController+AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertView.m"; sourceTree = "<group>"; };
 		09AE859C1CCE3E3700FDAF7E /* Kiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AE85A01CCE3E3700FDAF7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09AE85A21CCE3E3700FDAF7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +130,15 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		09A563371CCEA1DD009F951C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				09A563341CCEA1C6009F951C /* UIViewController+AlertView.h */,
+				09A563351CCEA1C6009F951C /* UIViewController+AlertView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		09AE85931CCE3E3700FDAF7E = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +166,7 @@
 			children = (
 				09AE85A21CCE3E3700FDAF7E /* AppDelegate.h */,
 				09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */,
+				09A563371CCEA1DD009F951C /* Categories */,
 				09A5631F1CCE689B009F951C /* Controllers */,
 				09A563271CCE81F3009F951C /* Utils */,
 				09AE85A81CCE3E3700FDAF7E /* Main.storyboard */,
@@ -393,6 +406,7 @@
 				09A5632D1CCE8869009F951C /* APIService.m in Sources */,
 				09A5632A1CCE8228009F951C /* APIClient.m in Sources */,
 				09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */,
+				09A563361CCEA1C6009F951C /* UIViewController+AlertView.m in Sources */,
 				09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */,
 				09A563231CCE68F3009F951C /* SignupViewController.m in Sources */,
 				09AE85A11CCE3E3700FDAF7E /* main.m in Sources */,
