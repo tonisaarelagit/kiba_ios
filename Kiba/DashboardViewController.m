@@ -7,7 +7,16 @@
 //
 
 #import "DashboardViewController.h"
+#import "LocalStorage.h"
+#import "Constants.h"
 
 @implementation DashboardViewController
+
+#pragma mark - Button Action Methods
+
+- (IBAction)didTapLogoutButton:(id)sender {
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self.navigationController setViewControllers:@[controller] animated:YES];
+}
 
 @end

@@ -11,6 +11,8 @@
 #import "ValidationUtils.h"
 #import "APIService.h"
 #import "UIViewController+AlertView.h"
+#import "LocalStorage.h"
+#import "Constants.h"
 
 @interface LoginViewController() <UITextFieldDelegate>
 
@@ -64,13 +66,21 @@
                 NSString *errorMessage = retDict[@"message"];
                 [self showSimpleAlertWithTitle:@"Error" message:errorMessage];
             } else {
-                [self showSimpleAlertWithTitle:@"Success" message:@"Login Success"];
+                // Save user info and navigate to dashboard.
+                [[LocalStorage shared] setDefault:email forKey:USER_EMAIL];
+                [[LocalStorage shared] setDefault:password forKey:USER_PASS];
+                [self navigateToDashboard];
             }
         } failed:^(NSString *errorMessage) {
             [UIUtils dismissProgressIn:self.view];
             [self showSimpleAlertWithTitle:@"Network Error" message:errorMessage];
         }];
     }
+}
+
+- (void)navigateToDashboard {
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
