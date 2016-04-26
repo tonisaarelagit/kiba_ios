@@ -74,6 +74,20 @@
             </objects>
             <point key="canvasLocation" x="554" y="400"/>
         </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="mJ2-dr-rJh">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="3rB-vt-BiB" customClass="DashboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bpm-IN-3TK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xs9-aP-vJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="400"/>
+        </scene>
         <!--Signup View Controller-->
         <scene sceneID="40m-Cb-LBf">
             <objects>

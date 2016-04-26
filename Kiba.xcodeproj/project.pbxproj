@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0912147A1CCFA9A60048B038 /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 091214791CCFA9A60048B038 /* LocalStorage.m */; };
 		09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5631D1CCE688A009F951C /* LoginViewController.m */; };
 		09A563231CCE68F3009F951C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563221CCE68F3009F951C /* SignupViewController.m */; };
 		09A563261CCE6903009F951C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563251CCE6903009F951C /* DashboardViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091214781CCFA9A60048B038 /* LocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorage.h; sourceTree = "<group>"; };
+		091214791CCFA9A60048B038 /* LocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorage.m; sourceTree = "<group>"; };
 		09A5631C1CCE688A009F951C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		09A5631D1CCE688A009F951C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		09A563211CCE68F3009F951C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				09A5632F1CCE9BB5009F951C /* ValidationUtils.m */,
 				09A563311CCE9CA1009F951C /* UIUtils.h */,
 				09A563321CCE9CA1009F951C /* UIUtils.m */,
+				091214781CCFA9A60048B038 /* LocalStorage.h */,
+				091214791CCFA9A60048B038 /* LocalStorage.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */,
 				09A563231CCE68F3009F951C /* SignupViewController.m in Sources */,
 				09AE85A11CCE3E3700FDAF7E /* main.m in Sources */,
+				0912147A1CCFA9A60048B038 /* LocalStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
