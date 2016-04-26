@@ -14,6 +14,6 @@ typedef void(^BlockSuccess)(NSDictionary *retDict);
 typedef void(^BlockFailed)(NSString *errorMessage);
 
 + (void)loginWith:(NSString *)email password:(NSString *)password success:(BlockSuccess)success failed:(BlockFailed)failed;
-+ (void)signupWith:(NSString *)name email:(NSString *)email password:(NSString *)password success:(BlockSuccess)success failed:(BlockFailed)failed;
++ (void)signupWith:(NSString *)name email:(NSString *)email password:(NSString *)password confirm:(NSString *)confirm success:(BlockSuccess)success failed:(BlockFailed)failed;
 
 @end

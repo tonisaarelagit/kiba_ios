@@ -47,7 +47,7 @@
     if (email.length == 0) {
         [UIUtils animateBorder:tfEmail];
     } else if (![ValidationUtils isValidEmail:email]) {
-        [UIUtils animateBorder:tfEmail];
+        [self showSimpleAlertWithTitle:@"Input error!" message:@"Invalid email"];
     } else if (password.length == 0) {
         [UIUtils animateBorder:tfPassword];
     } else {
@@ -68,7 +68,7 @@
             }
         } failed:^(NSString *errorMessage) {
             [UIUtils dismissProgressIn:self.view];
-            [self showSimpleAlertWithTitle:@"Error" message:errorMessage];
+            [self showSimpleAlertWithTitle:@"Network Error" message:errorMessage];
         }];
     }
 }

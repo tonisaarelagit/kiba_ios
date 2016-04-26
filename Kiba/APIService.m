@@ -23,11 +23,12 @@
 
 #pragma mark - Signup Endpoint
 
-+ (void)signupWith:(NSString *)name email:(NSString *)email password:(NSString *)password success:(BlockSuccess)success failed:(BlockFailed)failed {
++ (void)signupWith:(NSString *)name email:(NSString *)email password:(NSString *)password confirm:(NSString *)confirm success:(BlockSuccess)success failed:(BlockFailed)failed {
     NSDictionary *params = @{
                              @"signupName"      : name,
                              @"signupID"        : email,
-                             @"signupPassword"  : password
+                             @"signupPassword"  : password,
+                             @"signupDupPassword" : confirm
                              };
     [self makePost:@"/signup" params:params success:success failed:failed];
 }
