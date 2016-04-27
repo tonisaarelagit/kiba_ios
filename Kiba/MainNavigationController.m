@@ -14,6 +14,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Check and start dashboard page if already logged in.
+    [self checkAndStart];
 }
 
 - (void)checkAndStart {

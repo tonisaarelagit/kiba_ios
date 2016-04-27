@@ -11,12 +11,24 @@
 #import "Constants.h"
 
 @implementation DashboardViewController
+{
+    IBOutlet UILabel *lblEmail;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSString *email = [[LocalStorage shared] defaultForKey:USER_EMAIL];
+    lblEmail.text = email;
+}
 
 #pragma mark - Button Action Methods
 
 - (IBAction)didTapLogoutButton:(id)sender {
     UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
     [self.navigationController setViewControllers:@[controller] animated:YES];
+    
+    [[LocalStorage shared] removeDefaultForKey:USER_EMAIL];
 }
 
 @end
