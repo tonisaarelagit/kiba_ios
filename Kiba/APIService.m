@@ -53,7 +53,7 @@
 #pragma mark - Make Get Request
 
 + (void)makeGet:(NSString *)path params:(NSDictionary *)params success:(BlockSuccess)success failed:(BlockFailed)failed {
-    [[APIClient sharedClient] GET:path params:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [[APIClient sharedClient] GET:path params:params success:^(NSURLSessionDataTask *task, id responseObject) {
         NSMutableDictionary *response = (NSMutableDictionary *) responseObject;
         success(response);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
