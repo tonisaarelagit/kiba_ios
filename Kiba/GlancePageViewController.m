@@ -7,8 +7,11 @@
 //
 
 #import "GlancePageViewController.h"
+#import "GlanceContentViewController.h"
+#import "Constants.h"
+#import "LocalStorage.h"
 
-@interface GlancePageViewController () <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
+@interface GlancePageViewController () <UIPageViewControllerDelegate, UIPageViewControllerDataSource, GlanceContentViewControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *pages;
 
@@ -63,7 +66,9 @@
                             @"GlancePage2",
                             @"GlancePage3",
                             nil];
-    return [self.storyboard instantiateViewControllerWithIdentifier:identifiers[index]];
+    GlanceContentViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:identifiers[index]];
+    viewController.delegate = self;
+    return viewController;
 }
 
 #pragma mark - UIPageViewController Delegate / DataSource Methods
@@ -90,6 +95,14 @@
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
     return 0;
+}
+
+#pragma mark - GlanceContentViewControllerDelegate Method
+
+- (void)didFinishTutorial {
+    [[LocalStorage shared] setBool:YES forKey:GLANCED_TUTORIAL];
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

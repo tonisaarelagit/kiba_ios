@@ -12,6 +12,7 @@
 		098691F41CDA046C0077E1B3 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098691F31CDA046C0077E1B3 /* WelcomeViewController.m */; };
 		099C485A1CDB8F6E006804BD /* kiba_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C48591CDB8F6E006804BD /* kiba_logo.png */; };
 		099C485F1CDB991B006804BD /* GlancePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C485E1CDB991B006804BD /* GlancePageViewController.m */; };
+		099C48621CDBA9D6006804BD /* GlanceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C48611CDBA9D6006804BD /* GlanceContentViewController.m */; };
 		09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5631D1CCE688A009F951C /* LoginViewController.m */; };
 		09A563231CCE68F3009F951C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563221CCE68F3009F951C /* SignupViewController.m */; };
 		09A563261CCE6903009F951C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563251CCE6903009F951C /* DashboardViewController.m */; };
@@ -57,6 +58,8 @@
 		099C48591CDB8F6E006804BD /* kiba_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiba_logo.png; sourceTree = "<group>"; };
 		099C485D1CDB991B006804BD /* GlancePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlancePageViewController.h; sourceTree = "<group>"; };
 		099C485E1CDB991B006804BD /* GlancePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlancePageViewController.m; sourceTree = "<group>"; };
+		099C48601CDBA9D6006804BD /* GlanceContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceContentViewController.h; sourceTree = "<group>"; };
+		099C48611CDBA9D6006804BD /* GlanceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceContentViewController.m; sourceTree = "<group>"; };
 		09A5631C1CCE688A009F951C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		09A5631D1CCE688A009F951C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		09A563211CCE68F3009F951C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				09A563251CCE6903009F951C /* DashboardViewController.m */,
 				099C485D1CDB991B006804BD /* GlancePageViewController.h */,
 				099C485E1CDB991B006804BD /* GlancePageViewController.m */,
+				099C48601CDBA9D6006804BD /* GlanceContentViewController.h */,
+				099C48611CDBA9D6006804BD /* GlanceContentViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				09A563361CCEA1C6009F951C /* UIViewController+AlertView.m in Sources */,
 				09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */,
 				09A563231CCE68F3009F951C /* SignupViewController.m in Sources */,
+				099C48621CDBA9D6006804BD /* GlanceContentViewController.m in Sources */,
 				099C485F1CDB991B006804BD /* GlancePageViewController.m in Sources */,
 				09AE85A11CCE3E3700FDAF7E /* main.m in Sources */,
 				0912147A1CCFA9A60048B038 /* LocalStorage.m in Sources */,

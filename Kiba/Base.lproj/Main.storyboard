@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1402" y="400"/>
         </scene>
-        <!--View Controller-->
+        <!--Glance Content View Controller-->
         <scene sceneID="fvy-qO-kgt">
             <objects>
-                <viewController storyboardIdentifier="GlancePage1" id="90E-5h-olR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GlancePage1" id="90E-5h-olR" customClass="GlanceContentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qSq-zi-ztP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,10 +318,10 @@
             </objects>
             <point key="canvasLocation" x="129" y="400"/>
         </scene>
-        <!--View Controller-->
+        <!--Glance Content View Controller-->
         <scene sceneID="zEc-JW-LmT">
             <objects>
-                <viewController storyboardIdentifier="GlancePage2" id="khj-fc-dRe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GlancePage2" id="khj-fc-dRe" customClass="GlanceContentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Fh-L2-cIN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="2499" y="400"/>
         </scene>
-        <!--View Controller-->
+        <!--Glance Content View Controller-->
         <scene sceneID="4z4-f3-0TM">
             <objects>
-                <viewController storyboardIdentifier="GlancePage3" id="CNF-TU-lUy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GlancePage3" id="CNF-TU-lUy" customClass="GlanceContentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fJG-39-jqZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,6 +370,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QjY-5q-VcE">
+                                <rect key="frame" x="69" y="456" width="182" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.50588235290000005" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapStartRecording:" destination="CNF-TU-lUy" eventType="touchUpInside" id="a73-i9-SSh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
