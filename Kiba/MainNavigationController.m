@@ -17,6 +17,10 @@
     
     self.navigationBar.hidden = YES;
     
+    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.interactivePopGestureRecognizer.enabled = NO;
+    }
+    
     // Check and start dashboard page if already logged in.
     [self checkAndStart];
 }
