@@ -1,6 +1,6 @@
 //
 //  MainNavigationController.m
-//  Kiba
+//  ;
 //
 //  Created by admin_user on 4/26/16.
 //  Copyright © 2016 WorldStar. All rights reserved.
@@ -23,12 +23,17 @@
 
 - (void)checkAndStart {
     NSString *email = [[LocalStorage shared] defaultForKey:USER_EMAIL];
-    UIViewController *viewController;
-    if (email) {
-        viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
+    NSString *nextController;
+    if (!email) {
+        nextController = @"WelcomeViewController";
     } else {
-        viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
+        if ([[LocalStorage shared] boolForKey:GLANCED_TUTORIAL]) {
+            nextController = @"DashboardViewController";
+        } else {
+            nextController = @"GlancePageViewController";
+        }
     }
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:nextController];
     [self setViewControllers:@[viewController] animated:YES];
 }
 

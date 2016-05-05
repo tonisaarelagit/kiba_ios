@@ -12,4 +12,6 @@
 #define USER_EMAIL  @"USER_EMAIL"
 #define USER_PASS   @"USER_PASS"
 
+#define GLANCED_TUTORIAL @"GLANCED_TUTORIAL"
+
 #endif /* Constants_h */

@@ -89,7 +89,7 @@
 }
 
 - (void)navigateToDashboard {
-    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"GlancePageViewController"];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
