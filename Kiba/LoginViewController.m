@@ -24,6 +24,12 @@
     IBOutlet UITextField *tfPassword;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 #pragma mark - UITextField Delegate Methods
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -37,7 +43,11 @@
 
 #pragma mark - Button Action Methods
 
-- (IBAction)didTapLoginButton:(id)sender {
+- (IBAction)didTapBackButton:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)didTapDoneButton:(id)sender {
     [self checkAndSubmitLoginRequest];
 }
 

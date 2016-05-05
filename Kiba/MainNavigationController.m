@@ -15,6 +15,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationBar.hidden = YES;
+    
     // Check and start dashboard page if already logged in.
     [self checkAndStart];
 }
@@ -25,7 +27,7 @@
     if (email) {
         viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
     } else {
-        viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
     }
     [self setViewControllers:@[viewController] animated:YES];
 }

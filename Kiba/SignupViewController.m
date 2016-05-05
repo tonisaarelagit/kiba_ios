@@ -26,6 +26,12 @@
     IBOutlet UITextField *tfConfirm;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 #pragma mark - UITextField Delegate Methods
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -44,11 +50,11 @@
 
 #pragma mark - Button Action Methods
 
-- (IBAction)didTapCancelButton:(id)sender {
+- (IBAction)didTapBackButton:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)didTapSignupButton:(id)sender {
+- (IBAction)didTapDoneButton:(id)sender {
     [self checkAndRequestSignup];
 }
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0912147A1CCFA9A60048B038 /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 091214791CCFA9A60048B038 /* LocalStorage.m */; };
 		091214811CCFB6130048B038 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091214801CCFB6130048B038 /* MainNavigationController.m */; };
+		098691F41CDA046C0077E1B3 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098691F31CDA046C0077E1B3 /* WelcomeViewController.m */; };
+		099C485A1CDB8F6E006804BD /* kiba_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C48591CDB8F6E006804BD /* kiba_logo.png */; };
 		09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5631D1CCE688A009F951C /* LoginViewController.m */; };
 		09A563231CCE68F3009F951C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563221CCE68F3009F951C /* SignupViewController.m */; };
 		09A563261CCE6903009F951C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563251CCE6903009F951C /* DashboardViewController.m */; };
@@ -49,6 +51,9 @@
 		0912147B1CCFB36D0048B038 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		0912147F1CCFB6130048B038 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		091214801CCFB6130048B038 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		098691F21CDA046C0077E1B3 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		098691F31CDA046C0077E1B3 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		099C48591CDB8F6E006804BD /* kiba_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiba_logo.png; sourceTree = "<group>"; };
 		09A5631C1CCE688A009F951C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		09A5631D1CCE688A009F951C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		09A563211CCE68F3009F951C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
@@ -109,11 +114,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099C48581CDB8F6E006804BD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				099C48591CDB8F6E006804BD /* kiba_logo.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		09A5631F1CCE689B009F951C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				0912147F1CCFB6130048B038 /* MainNavigationController.h */,
 				091214801CCFB6130048B038 /* MainNavigationController.m */,
+				098691F21CDA046C0077E1B3 /* WelcomeViewController.h */,
+				098691F31CDA046C0077E1B3 /* WelcomeViewController.m */,
 				09A5631C1CCE688A009F951C /* LoginViewController.h */,
 				09A5631D1CCE688A009F951C /* LoginViewController.m */,
 				09A563211CCE68F3009F951C /* SignupViewController.h */,
@@ -181,6 +196,7 @@
 				09A563371CCEA1DD009F951C /* Categories */,
 				09A5631F1CCE689B009F951C /* Controllers */,
 				09A563271CCE81F3009F951C /* Utils */,
+				099C48581CDB8F6E006804BD /* Assets */,
 				09AE85A81CCE3E3700FDAF7E /* Main.storyboard */,
 				09AE85AB1CCE3E3700FDAF7E /* Assets.xcassets */,
 				09AE85B01CCE3E3700FDAF7E /* Info.plist */,
@@ -339,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AE85AC1CCE3E3700FDAF7E /* Assets.xcassets in Resources */,
+				099C485A1CDB8F6E006804BD /* kiba_logo.png in Resources */,
 				09AE85AA1CCE3E3700FDAF7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098691F41CDA046C0077E1B3 /* WelcomeViewController.m in Sources */,
 				09A563301CCE9BB5009F951C /* ValidationUtils.m in Sources */,
 				09A563261CCE6903009F951C /* DashboardViewController.m in Sources */,
 				091214811CCFB6130048B038 /* MainNavigationController.m in Sources */,
