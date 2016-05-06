@@ -106,7 +106,14 @@
 }
 
 - (void)navigateToDashboard {
-    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"GlancePageViewController"];
+    BOOL glancedTutorial = [[LocalStorage shared] boolForKey:GLANCED_TUTORIAL];
+    NSString *identifier;
+    if (glancedTutorial) {
+        identifier = @"DashboardViewController";
+    } else {
+        identifier = @"GlancePageViewController";
+    }
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
