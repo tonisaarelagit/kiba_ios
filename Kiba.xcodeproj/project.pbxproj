@@ -22,7 +22,7 @@
 		09A563361CCEA1C6009F951C /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563351CCEA1C6009F951C /* UIViewController+AlertView.m */; };
 		09AE85A11CCE3E3700FDAF7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85A01CCE3E3700FDAF7E /* main.m */; };
 		09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */; };
-		09AE85AA1CCE3E3700FDAF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AE85A81CCE3E3700FDAF7E /* Main.storyboard */; };
+		09AE85AA1CCE3E3700FDAF7E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AE85A81CCE3E3700FDAF7E /* Main_iPhone.storyboard */; };
 		09AE85AC1CCE3E3700FDAF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AE85AB1CCE3E3700FDAF7E /* Assets.xcassets */; };
 		09AE85BA1CCE3E3700FDAF7E /* KibaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85B91CCE3E3700FDAF7E /* KibaTests.m */; };
 		09AE85C51CCE3E3800FDAF7E /* KibaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85C41CCE3E3800FDAF7E /* KibaUITests.m */; };
@@ -35,6 +35,7 @@
 		09DC2A601CDCDAB3009676E9 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A5F1CDCDAB3009676E9 /* ForgotPasswordViewController.m */; };
 		09DC2A631CDCE2C6009676E9 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A621CDCE2C6009676E9 /* CommonUtils.m */; };
 		09DC2A651CDCE842009676E9 /* btn_record.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DC2A641CDCE842009676E9 /* btn_record.png */; };
+		09DC2A671CDCEBBD009676E9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC2A661CDCEBBD009676E9 /* Main_iPad.storyboard */; };
 		69101E0A40F378F4395D06C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C49FE9ADBAB00A4A88D735 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +87,7 @@
 		09AE85A01CCE3E3700FDAF7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09AE85A21CCE3E3700FDAF7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09AE85A31CCE3E3700FDAF7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09AE85A91CCE3E3700FDAF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09AE85A91CCE3E3700FDAF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		09AE85AB1CCE3E3700FDAF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09AE85B01CCE3E3700FDAF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09AE85B51CCE3E3700FDAF7E /* KibaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KibaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +112,7 @@
 		09DC2A611CDCE2C6009676E9 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		09DC2A621CDCE2C6009676E9 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		09DC2A641CDCE842009676E9 /* btn_record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_record.png; sourceTree = "<group>"; };
+		09DC2A661CDCEBBD009676E9 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		2FD943A1F9D4A4B66C968A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		78F756AD2C10DC27CFA2A0CD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B4C49FE9ADBAB00A4A88D735 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,7 +225,8 @@
 				09A5631F1CCE689B009F951C /* Controllers */,
 				09A563271CCE81F3009F951C /* Utils */,
 				099C48581CDB8F6E006804BD /* Assets */,
-				09AE85A81CCE3E3700FDAF7E /* Main.storyboard */,
+				09AE85A81CCE3E3700FDAF7E /* Main_iPhone.storyboard */,
+				09DC2A661CDCEBBD009676E9 /* Main_iPad.storyboard */,
 				09AE85AB1CCE3E3700FDAF7E /* Assets.xcassets */,
 				09AE85B01CCE3E3700FDAF7E /* Info.plist */,
 				09AE859F1CCE3E3700FDAF7E /* Supporting Files */,
@@ -419,7 +422,8 @@
 				09AE85AC1CCE3E3700FDAF7E /* Assets.xcassets in Resources */,
 				09DC2A651CDCE842009676E9 /* btn_record.png in Resources */,
 				099C485A1CDB8F6E006804BD /* kiba_logo.png in Resources */,
-				09AE85AA1CCE3E3700FDAF7E /* Main.storyboard in Resources */,
+				09DC2A671CDCEBBD009676E9 /* Main_iPad.storyboard in Resources */,
+				09AE85AA1CCE3E3700FDAF7E /* Main_iPhone.storyboard in Resources */,
 				09DC2A5D1CDCD93D009676E9 /* image_blank_profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,12 +553,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		09AE85A81CCE3E3700FDAF7E /* Main.storyboard */ = {
+		09AE85A81CCE3E3700FDAF7E /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				09AE85A91CCE3E3700FDAF7E /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -655,6 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldstar.Kiba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "10013cfc-c6ba-49d6-b8e6-dfe4893bb8fa";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -671,6 +676,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldstar.Kiba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a00d00f3-d115-43ae-ae60-d2b946bd9bb9";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
