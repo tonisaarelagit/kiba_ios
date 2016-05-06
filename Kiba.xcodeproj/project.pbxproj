@@ -31,6 +31,8 @@
 		09DC2A551CDCB13B009676E9 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A541CDCB13B009676E9 /* CameraViewController.m */; };
 		09DC2A581CDCB145009676E9 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A571CDCB145009676E9 /* FavoriteViewController.m */; };
 		09DC2A5B1CDCB150009676E9 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A5A1CDCB150009676E9 /* ProfileViewController.m */; };
+		09DC2A5D1CDCD93D009676E9 /* image_blank_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DC2A5C1CDCD93D009676E9 /* image_blank_profile.png */; };
+		09DC2A601CDCDAB3009676E9 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A5F1CDCDAB3009676E9 /* ForgotPasswordViewController.m */; };
 		69101E0A40F378F4395D06C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C49FE9ADBAB00A4A88D735 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +103,9 @@
 		09DC2A571CDCB145009676E9 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		09DC2A591CDCB150009676E9 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		09DC2A5A1CDCB150009676E9 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		09DC2A5C1CDCD93D009676E9 /* image_blank_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_blank_profile.png; sourceTree = "<group>"; };
+		09DC2A5E1CDCDAB3009676E9 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		09DC2A5F1CDCDAB3009676E9 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		2FD943A1F9D4A4B66C968A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		78F756AD2C10DC27CFA2A0CD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B4C49FE9ADBAB00A4A88D735 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				099C48591CDB8F6E006804BD /* kiba_logo.png */,
+				09DC2A5C1CDCD93D009676E9 /* image_blank_profile.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -252,6 +258,8 @@
 				09A5631D1CCE688A009F951C /* LoginViewController.m */,
 				09A563211CCE68F3009F951C /* SignupViewController.h */,
 				09A563221CCE68F3009F951C /* SignupViewController.m */,
+				09DC2A5E1CDCDAB3009676E9 /* ForgotPasswordViewController.h */,
+				09DC2A5F1CDCDAB3009676E9 /* ForgotPasswordViewController.m */,
 				099C485D1CDB991B006804BD /* GlancePageViewController.h */,
 				099C485E1CDB991B006804BD /* GlancePageViewController.m */,
 				099C48601CDBA9D6006804BD /* GlanceContentViewController.h */,
@@ -403,6 +411,7 @@
 				09AE85AC1CCE3E3700FDAF7E /* Assets.xcassets in Resources */,
 				099C485A1CDB8F6E006804BD /* kiba_logo.png in Resources */,
 				09AE85AA1CCE3E3700FDAF7E /* Main.storyboard in Resources */,
+				09DC2A5D1CDCD93D009676E9 /* image_blank_profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +492,7 @@
 				09A563331CCE9CA1009F951C /* UIUtils.m in Sources */,
 				09A5632D1CCE8869009F951C /* APIService.m in Sources */,
 				09DC2A4D1CDCAD35009676E9 /* MainTabBarController.m in Sources */,
+				09DC2A601CDCDAB3009676E9 /* ForgotPasswordViewController.m in Sources */,
 				09A5632A1CCE8228009F951C /* APIClient.m in Sources */,
 				09DC2A521CDCB130009676E9 /* HomeViewController.m in Sources */,
 				09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */,
