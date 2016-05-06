@@ -14,4 +14,6 @@
 
 #define GLANCED_TUTORIAL @"GLANCED_TUTORIAL"
 
+#define PROFILE_IMAGE_FILENAME @"kiba_profile_image.png"
+
 #endif /* Constants_h */
