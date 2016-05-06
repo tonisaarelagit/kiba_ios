@@ -15,7 +15,6 @@
 		099C48621CDBA9D6006804BD /* GlanceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C48611CDBA9D6006804BD /* GlanceContentViewController.m */; };
 		09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5631D1CCE688A009F951C /* LoginViewController.m */; };
 		09A563231CCE68F3009F951C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563221CCE68F3009F951C /* SignupViewController.m */; };
-		09A563261CCE6903009F951C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563251CCE6903009F951C /* DashboardViewController.m */; };
 		09A5632A1CCE8228009F951C /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A563291CCE8228009F951C /* APIClient.m */; };
 		09A5632D1CCE8869009F951C /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5632C1CCE8869009F951C /* APIService.m */; };
 		09A563301CCE9BB5009F951C /* ValidationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5632F1CCE9BB5009F951C /* ValidationUtils.m */; };
@@ -27,6 +26,11 @@
 		09AE85AC1CCE3E3700FDAF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AE85AB1CCE3E3700FDAF7E /* Assets.xcassets */; };
 		09AE85BA1CCE3E3700FDAF7E /* KibaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85B91CCE3E3700FDAF7E /* KibaTests.m */; };
 		09AE85C51CCE3E3800FDAF7E /* KibaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE85C41CCE3E3800FDAF7E /* KibaUITests.m */; };
+		09DC2A4D1CDCAD35009676E9 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A4C1CDCAD35009676E9 /* MainTabBarController.m */; };
+		09DC2A521CDCB130009676E9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A511CDCB130009676E9 /* HomeViewController.m */; };
+		09DC2A551CDCB13B009676E9 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A541CDCB13B009676E9 /* CameraViewController.m */; };
+		09DC2A581CDCB145009676E9 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A571CDCB145009676E9 /* FavoriteViewController.m */; };
+		09DC2A5B1CDCB150009676E9 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC2A5A1CDCB150009676E9 /* ProfileViewController.m */; };
 		69101E0A40F378F4395D06C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C49FE9ADBAB00A4A88D735 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +68,6 @@
 		09A5631D1CCE688A009F951C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		09A563211CCE68F3009F951C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		09A563221CCE68F3009F951C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
-		09A563241CCE6903009F951C /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
-		09A563251CCE6903009F951C /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		09A563281CCE8228009F951C /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		09A563291CCE8228009F951C /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		09A5632B1CCE8869009F951C /* APIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
@@ -89,6 +91,16 @@
 		09AE85C01CCE3E3800FDAF7E /* KibaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KibaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AE85C41CCE3E3800FDAF7E /* KibaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KibaUITests.m; sourceTree = "<group>"; };
 		09AE85C61CCE3E3800FDAF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DC2A4B1CDCAD35009676E9 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		09DC2A4C1CDCAD35009676E9 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		09DC2A501CDCB130009676E9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		09DC2A511CDCB130009676E9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		09DC2A531CDCB13B009676E9 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		09DC2A541CDCB13B009676E9 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		09DC2A561CDCB145009676E9 /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		09DC2A571CDCB145009676E9 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
+		09DC2A591CDCB150009676E9 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		09DC2A5A1CDCB150009676E9 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		2FD943A1F9D4A4B66C968A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		78F756AD2C10DC27CFA2A0CD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B4C49FE9ADBAB00A4A88D735 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,18 +145,8 @@
 			children = (
 				0912147F1CCFB6130048B038 /* MainNavigationController.h */,
 				091214801CCFB6130048B038 /* MainNavigationController.m */,
-				098691F21CDA046C0077E1B3 /* WelcomeViewController.h */,
-				098691F31CDA046C0077E1B3 /* WelcomeViewController.m */,
-				09A5631C1CCE688A009F951C /* LoginViewController.h */,
-				09A5631D1CCE688A009F951C /* LoginViewController.m */,
-				09A563211CCE68F3009F951C /* SignupViewController.h */,
-				09A563221CCE68F3009F951C /* SignupViewController.m */,
-				09A563241CCE6903009F951C /* DashboardViewController.h */,
-				09A563251CCE6903009F951C /* DashboardViewController.m */,
-				099C485D1CDB991B006804BD /* GlancePageViewController.h */,
-				099C485E1CDB991B006804BD /* GlancePageViewController.m */,
-				099C48601CDBA9D6006804BD /* GlanceContentViewController.h */,
-				099C48611CDBA9D6006804BD /* GlanceContentViewController.m */,
+				09DC2A4E1CDCB0DE009676E9 /* OnboardingModule */,
+				09DC2A4F1CDCB102009676E9 /* DashboardModule */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +241,40 @@
 				09AE85C61CCE3E3800FDAF7E /* Info.plist */,
 			);
 			path = KibaUITests;
+			sourceTree = "<group>";
+		};
+		09DC2A4E1CDCB0DE009676E9 /* OnboardingModule */ = {
+			isa = PBXGroup;
+			children = (
+				098691F21CDA046C0077E1B3 /* WelcomeViewController.h */,
+				098691F31CDA046C0077E1B3 /* WelcomeViewController.m */,
+				09A5631C1CCE688A009F951C /* LoginViewController.h */,
+				09A5631D1CCE688A009F951C /* LoginViewController.m */,
+				09A563211CCE68F3009F951C /* SignupViewController.h */,
+				09A563221CCE68F3009F951C /* SignupViewController.m */,
+				099C485D1CDB991B006804BD /* GlancePageViewController.h */,
+				099C485E1CDB991B006804BD /* GlancePageViewController.m */,
+				099C48601CDBA9D6006804BD /* GlanceContentViewController.h */,
+				099C48611CDBA9D6006804BD /* GlanceContentViewController.m */,
+			);
+			name = OnboardingModule;
+			sourceTree = "<group>";
+		};
+		09DC2A4F1CDCB102009676E9 /* DashboardModule */ = {
+			isa = PBXGroup;
+			children = (
+				09DC2A4B1CDCAD35009676E9 /* MainTabBarController.h */,
+				09DC2A4C1CDCAD35009676E9 /* MainTabBarController.m */,
+				09DC2A501CDCB130009676E9 /* HomeViewController.h */,
+				09DC2A511CDCB130009676E9 /* HomeViewController.m */,
+				09DC2A531CDCB13B009676E9 /* CameraViewController.h */,
+				09DC2A541CDCB13B009676E9 /* CameraViewController.m */,
+				09DC2A561CDCB145009676E9 /* FavoriteViewController.h */,
+				09DC2A571CDCB145009676E9 /* FavoriteViewController.m */,
+				09DC2A591CDCB150009676E9 /* ProfileViewController.h */,
+				09DC2A5A1CDCB150009676E9 /* ProfileViewController.m */,
+			);
+			name = DashboardModule;
 			sourceTree = "<group>";
 		};
 		328FC195581B92C20913E641 /* Frameworks */ = {
@@ -439,15 +475,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DC2A581CDCB145009676E9 /* FavoriteViewController.m in Sources */,
 				098691F41CDA046C0077E1B3 /* WelcomeViewController.m in Sources */,
 				09A563301CCE9BB5009F951C /* ValidationUtils.m in Sources */,
-				09A563261CCE6903009F951C /* DashboardViewController.m in Sources */,
+				09DC2A5B1CDCB150009676E9 /* ProfileViewController.m in Sources */,
 				091214811CCFB6130048B038 /* MainNavigationController.m in Sources */,
 				09A563331CCE9CA1009F951C /* UIUtils.m in Sources */,
 				09A5632D1CCE8869009F951C /* APIService.m in Sources */,
+				09DC2A4D1CDCAD35009676E9 /* MainTabBarController.m in Sources */,
 				09A5632A1CCE8228009F951C /* APIClient.m in Sources */,
+				09DC2A521CDCB130009676E9 /* HomeViewController.m in Sources */,
 				09A5631E1CCE688A009F951C /* LoginViewController.m in Sources */,
 				09A563361CCEA1C6009F951C /* UIViewController+AlertView.m in Sources */,
+				09DC2A551CDCB13B009676E9 /* CameraViewController.m in Sources */,
 				09AE85A41CCE3E3700FDAF7E /* AppDelegate.m in Sources */,
 				09A563231CCE68F3009F951C /* SignupViewController.m in Sources */,
 				099C48621CDBA9D6006804BD /* GlanceContentViewController.m in Sources */,

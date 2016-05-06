@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="2234" y="400"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="VYc-Vw-zdW">
             <objects>
-                <tabBarController storyboardIdentifier="DashboardViewController" id="Htu-JA-sOY" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashboardViewController" id="Htu-JA-sOY" customClass="MainTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleAspectFit" id="Igs-Eh-2ef">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="545" y="1065"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="ihs-Qo-XKw">
             <objects>
-                <viewController id="yfV-pg-jrL" sceneMemberID="viewController">
+                <viewController id="yfV-pg-jrL" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rGH-2K-z5j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="1402" y="1065"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="k9g-KH-jv1">
             <objects>
-                <viewController id="GPK-i4-yvc" sceneMemberID="viewController">
+                <viewController id="GPK-i4-yvc" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5a2-tZ-2Xw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="2234" y="1065"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorite View Controller-->
         <scene sceneID="qnJ-is-EOX">
             <objects>
-                <viewController id="cpG-dr-gPn" sceneMemberID="viewController">
+                <viewController id="cpG-dr-gPn" customClass="FavoriteViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gpE-oP-9xT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
