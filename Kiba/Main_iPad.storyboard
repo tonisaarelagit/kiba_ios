@@ -121,7 +121,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="DashboardViewController" id="AsM-tc-etP" customClass="MainTabBarController" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <tabBar key="tabBar" contentMode="scaleAspectFit" id="186-Hq-La1">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" itemPositioning="fill" id="186-Hq-La1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
