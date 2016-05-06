@@ -10,4 +10,6 @@
 
 @interface CameraViewController : UIViewController
 
+@property (nonatomic, strong) void (^didDismiss)(NSData *someData);
+
 @end

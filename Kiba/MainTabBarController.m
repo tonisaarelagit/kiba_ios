@@ -7,6 +7,7 @@
 //
 
 #import "MainTabBarController.h"
+#import "CameraViewController.h"
 
 @interface MainTabBarController () <UITabBarControllerDelegate>
 
@@ -25,6 +26,13 @@
 #pragma mark - UITabBarControllerDelegate Method
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    if (self.selectedIndex == 1) {
+        CameraViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CameraViewController"];
+        viewController.didDismiss = ^(NSData *data) {
+            self.selectedIndex = 0;
+        };
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
 }
 
 @end

@@ -302,6 +302,40 @@
             </objects>
             <point key="canvasLocation" x="2234" y="1065"/>
         </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="hCG-K7-4yi">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="iCo-yZ-yqc" customClass="CameraViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdQ-0W-coC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AWx-g6-F6x">
+                                <rect key="frame" x="128" y="484" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn_record.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8rr-qH-USq">
+                                <rect key="frame" x="217" y="501" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.50588235290000005" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCancel:" destination="iCo-yZ-yqc" eventType="touchUpInside" id="W9k-gO-y0R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="8rr-qH-USq" id="tyX-YH-ZBV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6p-DN-OOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="1065"/>
+        </scene>
         <!--Favorite View Controller-->
         <scene sceneID="qnJ-is-EOX">
             <objects>
@@ -608,6 +642,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn_record.png" width="205" height="205"/>
         <image name="icon_back" width="24" height="24"/>
         <image name="icon_camera" width="38" height="32"/>
         <image name="icon_favorite" width="32" height="32"/>
